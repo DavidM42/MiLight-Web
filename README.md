@@ -9,29 +9,30 @@ It supports al basic interface operations, and a few more.
 MiLight products are also known under the name LimitlessLED, and EasyBulb Lamps.
 
 ## How to install
-
-Checkout the source from github:
-
-    git clone https://github.com/hanckmann/MiLight-Web.git
-
 First create a Python 3 virtual environment (or install the required packages directly), activate the virtual environment, and install the required packages:
 
-    cd MiLight-Web
-    python3 -m venv flask
-    source flask/bin/activate
-    pip install -r requirements.txt
+    virtuanenv MiLight-Web_env
+    cd MiLight-Web_env
+    
 
 Now MiLight-Web is ready for action.
 
+Checkout the source from github:
+
+    git clone https://github.com/DavidM42/MiLight-Web.git
+    cd MiLight-Web
+    pip3 install -r requirements.txt
+
 ## Start/test MiLight-Web
 
-Make sure there is at the least one MiLight brige on your network, and test the application. First make sure that you are in the virtual environment:
+Go into the right directory and issue screen:
 
-    source flask/bin/activate
+    screen 
  
  Start MiLight-Web:
 
-    ./run.py
+    python3 ./run.py
+    (then exit screen with Strg+ A +D)
 
 Running MiLight-Web in this way works, but is not recommended (security and performance reasons).
 
